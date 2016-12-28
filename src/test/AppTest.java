@@ -27,9 +27,32 @@ public class AppTest {
     }
 
     @Test
-    public void testFoo()
+    public void testFooA()
     {
+        int result = 0;
+        try {
+            result = a.fooA();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(1, result);
+    }
 
+    @Test
+    public void testBarA()
+    {
+        int result = 0;
+        try {
+            result = a.barA(5);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(8, result);
+    }
+
+    @Test
+    public void testFooB()
+    {
         int result = 0;
         try {
             result = b.fooB(5);
@@ -40,9 +63,8 @@ public class AppTest {
     }
 
     @Test
-    public void testBar()
+    public void testBarB()
     {
-
         int result = 0;
         try {
             result = b.barB(5);
