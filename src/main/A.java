@@ -7,7 +7,7 @@ public class A {
 	}
 	
 	public int fooA() throws Exception {
-		return 1;
+		throw new Exception();
 	}
 
 	public int barA(int value) throws Exception {
